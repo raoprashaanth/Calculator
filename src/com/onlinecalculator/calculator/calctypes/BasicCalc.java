@@ -5,17 +5,6 @@ class Calc3
 {
 	int a, b, c,ch ,res ;
 	
-	public Calc3()
-        {
-	
-		a=0;
-		b=0;
-		c=0;
-		ch=0;
-		res=0;
-		
-        }
-	
 	public int menu()
 	{
 		System.out.println("****");
@@ -27,16 +16,16 @@ class Calc3
         System.out.println("Enter your choice");
         Scanner s=new Scanner(System.in);
         ch=s.nextInt();
-        return 0;
+        return ch;
         
 	}
 	
     public void userInputs()
     {
     	 Scanner s=new Scanner(System.in);
-    	   System.out.println("enter one number :"+a);
+    	   System.out.println("enter one number :");
     	   a=s.nextInt();
-    	   System.out.println("enter second number"+b);
+    	   System.out.println("enter second number");
     		b=s.nextInt();
     	
     }
@@ -93,8 +82,9 @@ public class BasicCalc
 public static void main(String args[])
 {
 	Calc3 B= new Calc3();
-			B.menu();
 	B.userInputs();
+			B.menu();
+	
 	B.performOperation();
 }
 	
